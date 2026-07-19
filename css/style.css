@@ -947,7 +947,10 @@ h1, h2, h3, h4, h5,
 
 .slide-1 {
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+ background-image: url('images/hero_1.jpg');
+  position: relative;
+}
   .slide-1:before {
     content: "";
     position: absolute;
