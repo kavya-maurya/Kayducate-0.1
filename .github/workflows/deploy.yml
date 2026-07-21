@@ -28,3 +28,19 @@ jobs:
             systemctl restart nginx
 
             echo "✅ Deployment completed successfully."
+
+      - name: Send ntfy notification
+        if: success()
+        run: |
+          curl -H "Title: 🚀 Kayducate Deployment" \
+               -H "Priority: high" \
+               -d "Deployment to VPS completed successfully." \
+               https://ntfy.sh/YOUR_TOPIC
+
+      - name: Send failure notification
+        if: failure()
+        run: |
+          curl -H "Title: ❌ Kayducate Deployment Failed" \
+               -H "Priority: urgent" \
+               -d "GitHub Actions deployment failed. Check the workflow logs." \
+               https://ntfy.sh/YOUR_TOPIC
