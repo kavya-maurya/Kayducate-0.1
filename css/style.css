@@ -1,4 +1,104 @@
 /* Base */
+.kayducate-portal-card {
+  position: relative;
+  max-width: 440px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.kayducate-portal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.25);
+}
+
+.kayducate-portal-card .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #4f46e5;
+  background-color: #eef2ff;
+  border-radius: 30px;
+  margin-bottom: 1.25rem;
+}
+
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #6366f1;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(99, 102, 241, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+}
+
+.kayducate-portal-card h2 {
+  font-size: 1.65rem;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.kayducate-portal-card p {
+  font-size: 0.95rem;
+  color: #233f64 !important;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+  text-align: left;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.kayducate-portal-card .cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px -4px rgba(99, 102, 241, 0.4);
+  transition: all 0.2s ease;
+}
+
+.kayducate-portal-card .cta-button:hover {
+  box-shadow: 0 12px 25px -4px rgba(99, 102, 241, 0.6);
+  transform: translateY(-1px);
+}
 body {
   line-height: 1.7;
   color: gray;
