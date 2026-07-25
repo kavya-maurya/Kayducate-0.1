@@ -473,7 +473,7 @@ loadQuestion();
 
 function loadQuestion(){
 
-counter.innerText=`Question ${current+1} of ${questions.length}`;
+// counter.innerText=`Question ${current+1} of ${questions.length}`;
 
 question.innerText=questions[current].question;
 
