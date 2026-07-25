@@ -469,34 +469,34 @@ const options=document.getElementById("options");
 const counter=document.getElementById("counter");
 const progress=document.getElementById("progressFill");
 
-loadQuestion();
+// loadQuestion();
 
-function loadQuestion(){
+// function loadQuestion(){
 
-// counter.innerText=`Question ${current+1} of ${questions.length}`;
+// // counter.innerText=`Question ${current+1} of ${questions.length}`;
 
-question.innerText=questions[current].question;
+// question.innerText=questions[current].question;
 
-progress.style.width=
-((current/questions.length)*100)+"%";
+// progress.style.width=
+// ((current/questions.length)*100)+"%";
 
-options.innerHTML="";
+// options.innerHTML="";
 
-questions[current].options.forEach(opt=>{
+// questions[current].options.forEach(opt=>{
 
-let btn=document.createElement("button");
+// let btn=document.createElement("button");
 
-btn.className="option";
+// btn.className="option";
 
-btn.innerText=opt.text;
+// btn.innerText=opt.text;
 
-btn.onclick=()=>selectAnswer(opt.type);
+// btn.onclick=()=>selectAnswer(opt.type);
 
-options.appendChild(btn);
+// options.appendChild(btn);
 
-});
+// });
 
-}
+// }
 
 function selectAnswer(type){
 
